@@ -50,35 +50,23 @@ Then pull the model:
 
 ## 4. Install Python Dependencies (Exact Versions)
 
-⚠️ **IMPORTANT:**  
-Please **copy–paste and run each command one by one**.  
-Do **NOT** install all together — if even one fails, the project will not work.
+⚠️ **Please install these packages ONE BY ONE.  
+Do NOT copy-paste all together.  
+If even one dependency fails, the entire project will not work.**
 
-⭐ Run this first:
-pip install langchain==0.1.16
+Run each line separately:
 
-⭐ Then run:
-pip install langchain-community
-
-⭐ Then:
-pip install langchain-text-splitters
-
-⭐ Next:
-pip install chromadb
-
-⭐ Next:
-pip install sentence-transformers
-
-⭐ Next:
-pip install ollama
-
-⭐ Next:
-pip install faiss-cpu
-
-⭐ Finally:
-pip install fastapi
+    pip install langchain==0.1.16
+    pip install langchain-community
+    pip install langchain-text-splitters
+    pip install chromadb
+    pip install sentence-transformers
+    pip install ollama
+    pip install faiss-cpu
+    pip install fastapi
 
 ------------------------------------------------------------------------
+
 
 
 
