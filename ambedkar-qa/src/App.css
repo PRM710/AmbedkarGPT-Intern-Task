@@ -1,42 +1,106 @@
+body {
+  background: #0a0a0a;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 50px auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.qa-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #1c1c1c;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  border: 1px solid #222;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.qa-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #00ffea;
+  letter-spacing: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.qa-input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  resize: none;
+  transition: 0.25s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+.qa-input:focus {
+  border: 1px solid #00ffea;
+  box-shadow: 0 0 10px #00ffea60;
+  outline: none;
 }
 
-.read-the-docs {
-  color: #888;
+
+.qa-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 18px;
+  background: #00ffea;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
+
+.qa-button:hover {
+  background: #00d5c5;
+  transform: scale(1.02);
+}
+
+.qa-button:active {
+  transform: scale(0.98);
+}
+
+
+.qa-loading {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #aaa;
+  font-style: italic;
+}
+
+
+.qa-answer {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 22px;
+  font-size: 17px;
+  line-height: 1.6;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.qa-answer strong {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: #00ffea;
+  display: block;
+}
+
