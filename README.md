@@ -1,15 +1,16 @@
-# Ambedkar Q&A System -- Setup Guide
+# Ambedkar Q&A System --- Setup Guide
 
-This project uses **LangChain + ChromaDB + FAISS + Ollama (Mistral 7B)**
-to create a local RAG-based Q&A system.
+This project uses **LangChain + ChromaDB + FAISS + Ollama (Mistral
+7B)**\
+to create a fully local RAG-based Q&A system.
 
 ------------------------------------------------------------------------
 
-## ✅ 1. Install Ollama & Pull Model
+## ✅ 1. Install Ollama & Pull Mistral Model
 
-Make sure Ollama is installed on your system.
+Make sure **Ollama** is installed.
 
-Then pull the Mistral model:
+Then pull the model:
 
     ollama pull mistral
 
@@ -24,7 +25,7 @@ Then pull the Mistral model:
 
 ## ✅ 3. Backend Setup
 
-### ▶ Step 1 --- Go to the backend folder
+### ▶ Step 1 --- Enter Backend Folder
 
     cd backend
 
@@ -44,9 +45,9 @@ Then pull the Mistral model:
 
 ------------------------------------------------------------------------
 
-## ✅ 4. Install Required Python Dependencies
+## ✅ 4. Install Python Dependencies (Exact Versions)
 
-Install EXACT versions and packages in this order:
+Install **in this exact order**:
 
     pip install langchain==0.1.16
     pip install langchain-community
@@ -58,28 +59,58 @@ Install EXACT versions and packages in this order:
 
 ------------------------------------------------------------------------
 
-## ✅ 5. Run the Backend Server
+## ✅ 5. Run the Backend
 
-Make sure you stay inside the **backend folder**, then run:
+### ▶ Run using Python only (simple mode)
 
-    python server.py
+    python main.py
 
-Your API will start at:
+### ▶ Run API server (for frontend integration)
+
+    uvicorn server:app --reload
+
+API will start at:
 
     http://127.0.0.1:8000
 
 ------------------------------------------------------------------------
 
-## 🚀 You're Ready!
+## ✅ 6. Frontend Setup (React)
 
-Use the API in your frontend (React) to send questions to:
+### ▶ Step 1 --- Enter frontend folder
+
+    cd frontend
+
+### ▶ Step 2 --- Install dependencies
+
+    npm install
+    npm install axios
+
+### ▶ Step 3 --- Start development server
+
+    npm run dev
+
+Frontend will run on:
+
+    http://localhost:5173
+
+------------------------------------------------------------------------
+
+## 🚀 API Endpoint
+
+Send questions to:
 
     POST /ask
 
-With body:
+Body:
 
 ``` json
-{ "question": "your question here" }
+{ "question": "Your question here" }
 ```
 
 ------------------------------------------------------------------------
+
+## 🎉 You're Ready!
+
+Your full RAG system (Backend + Frontend + Ollama Mistral) is now
+running locally.
