@@ -50,7 +50,11 @@ Then pull the model:
 
 ## 4. Install Python Dependencies (Exact Versions)
 
-Install **in this exact order**:
+⚠️ **Please install these packages ONE BY ONE.  
+Do NOT copy-paste all together.  
+If even one dependency fails, the entire project will not work.**
+
+Run each line separately:
 
     pip install langchain==0.1.16
     pip install langchain-community
@@ -62,6 +66,7 @@ Install **in this exact order**:
     pip install fastapi
 
 ------------------------------------------------------------------------
+
 
 ## 5. Run the Backend
 
