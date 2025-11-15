@@ -65,11 +65,11 @@ Install **in this exact order**:
 
 ## 5. Run the Backend
 
-### ▶ Run using Python only (simple mode)
+### ▶ Run using Python only (simple mode) (THIS WILL RUN ON COMMAND PROMPT OR ANY TERMINAL)
 
     python main.py
 
-### ▶ Run API server (for frontend integration)
+### ▶ Run API server (for frontend integration) (THIS IS FOR USING THE LLM WITH REACT VITE FRONTEND)
 
     uvicorn server:app --reload
 
